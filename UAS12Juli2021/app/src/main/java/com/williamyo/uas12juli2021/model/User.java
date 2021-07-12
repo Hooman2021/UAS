@@ -7,9 +7,9 @@ public class User {
     private String id;
     @SerializedName("email")
     private String email;
-    @SerializedName("fname")
+    @SerializedName("first_name")
     private String fname;
-    @SerializedName("lname")
+    @SerializedName("last_name")
     private String lname;
     @SerializedName("avatar")
     private String avatar;

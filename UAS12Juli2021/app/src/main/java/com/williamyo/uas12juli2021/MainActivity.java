@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 List<User> userList = response.body().getData();
                 Log.d("Retrofit Get", "Jumlah data User "+ String.valueOf(userList.size()));
                 mAdapter = new UsersAdapter(userList);
+                mRecyclerView.setLayoutManager(mLayoutManager);
                 mRecyclerView.setAdapter(mAdapter);
             }
 
